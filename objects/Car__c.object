@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>Simpsons_VF01_Car</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Car_Available__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Car Available</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Car_Name__c</fullName>
+        <description>Car Name</description>
+        <externalId>false</externalId>
+        <label>Car Name</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Car_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Car Number</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Car_Service_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Car Service Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Charges_Per_Day__c</fullName>
+        <description>Car Charges</description>
+        <externalId>false</externalId>
+        <label>Charges Per Day</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Seats__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Seats</label>
+        <picklist>
+            <controllingField>Type_of_Car__c</controllingField>
+            <picklistValues>
+                <fullName>4 +1 Seater</fullName>
+                <controllingFieldValues>AC</controllingFieldValues>
+                <controllingFieldValues>Non-AC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5 +1 Seater</fullName>
+                <controllingFieldValues>AC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6 +1 Seater</fullName>
+                <controllingFieldValues>AC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7 +1 Seater</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Permit_Expiry_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Permit Expiry Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Permit_Issue_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Permit Issue Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Pollution_Expiry_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Pollution Expiry Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Pollution_Issue_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Pollution Issue Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_Car__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Car</label>
+        <picklist>
+            <picklistValues>
+                <fullName>AC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-AC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Car</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{0000}</displayFormat>
+        <label>Car Id</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Cars</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Car_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Type_of_Car__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Number_of_Seats__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Car_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Charges_Per_Day__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Number_of_Seats__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Type_of_Car__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Simpsons_carPermitCheck</fullName>
+        <active>true</active>
+        <errorConditionFormula>Permit_Expiry_Date__c  &lt; Permit_Issue_Date__c</errorConditionFormula>
+        <errorMessage>Permit Expiry Date should be greater than the Permit Issue Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Simpsons_carPollutionCheck</fullName>
+        <active>true</active>
+        <errorConditionFormula>Pollution_Expiry_Date__c  &lt; Pollution_Issue_Date__c</errorConditionFormula>
+        <errorMessage>Permit Expiry Date should be greater than the Permit Issue Date</errorMessage>
+    </validationRules>
+</CustomObject>

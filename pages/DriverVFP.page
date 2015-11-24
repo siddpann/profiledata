@@ -1,0 +1,23 @@
+<apex:page standardController="Driver__c">
+    <h1>New Visual Force Page</h1>
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection columns="3" title="Driver Details">
+                <apex:inputField label="Driver Id" value="{!Driver__c.Name}" />
+                <apex:inputField label="Driver Name" value="{!Driver__c.Driver_First_Name__c}" />
+                <apex:inputField label="Phone Number" value="{!Driver__c.Phone_Number__c}" />
+                <apex:inputField label="Basic Salary" value="{!Driver__c.Basic_Pay__c}" />
+                <apex:inputField label="Deduction Amount" value="{!Driver__c.Deduction_Amount__c}" />
+                <apex:inputField label="Driver Available" value="{!Driver__c.Driver_Available__c}" />
+                <apex:inputField label="Number of Trips" value="{!Driver__c.Number_of_Trips__c}" />
+                <apex:inputField label="Salary" value="{!Driver__c.Salary__c}" />                
+            </apex:pageBlockSection>            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="1" title="Driver Details check" >
+            <apex:detail />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

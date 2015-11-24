@@ -1,0 +1,21 @@
+<apex:page standardController="Booking__c">
+<apex:form >
+ <apex:pageBlock >
+  <apex:pageBlockSection columns="1" title="Enter Booking Details" >
+      <apex:inputField label="Booking From Date" value="{!Booking__c.Booking_From_Date__c}"/>
+      <apex:inputField label="Booking To Date" value="{!Booking__c.Booking_To_Date__c}"/>
+      <apex:inputField label="Car" value="{!Booking__c.Car__c}"/>
+      <apex:inputField label="Customer Name" value="{!Booking__c.CustomerName__c}"/>
+      <apex:inputField label="Driver" value="{!Booking__c.Driver__c}"/>
+      <apex:inputField label="Pickup Point" value="{!Booking__c.Pick_up_Point__c}"/>
+            <apex:inputField label="ID Proof" value="{!Booking__c.Id_Proof__c}"/>
+      <apex:inputField label="Dropping Point" value="{!Booking__c.Drop_Point__c}"/>
+          
+      <apex:commandButton value="New Booking" action="{!save}"/>
+  </apex:pageBlockSection>
+  <apex:pageBlockSection columns="1" title="Booking Details">
+  <apex:detail />
+  </apex:pageBlockSection>
+ </apex:pageBlock>
+</apex:form>
+</apex:page>

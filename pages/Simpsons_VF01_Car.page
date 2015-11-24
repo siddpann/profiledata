@@ -1,0 +1,28 @@
+<apex:page standardController="Car__c">
+<apex:form >
+ <apex:pageBlock >
+  <apex:pageBlockSection columns="2" title="Enter Car Details" >
+     
+      <apex:inputField label="Car Name" value="{!Car__c.Car_Name__c}"/>
+      <apex:inputField label="Car Number" value="{!Car__c.Car_Number__c}"/>      
+      <apex:inputField label="Car Available" value="{!Car__c.Car_Available__c}"/>
+      <apex:inputField label="Charges Per Day" value="{!Car__c.Charges_Per_Day__c}"/>
+      <apex:inputField label="Type of Car" value="{!Car__c.Type_of_Car__c}"/>
+      <apex:inputField label="Number of Seats" value="{!Car__c.Number_of_Seats__c}"/>
+      <apex:inputField label="Car Service Date" value="{!Car__c.Car_Service_Date__c}"/>
+
+      <apex:inputField label="Permit Expiry Date" value="{!Car__c.Permit_Expiry_Date__c}"/>
+      <apex:inputField label="Permit Issue Date" value="{!Car__c.Permit_Issue_Date__c}"/>
+      <apex:inputField label="Pollution Expiry Date" value="{!Car__c.Pollution_Expiry_Date__c}"/>
+      <apex:inputField label="Pollution Issue Date" value="{!Car__c.Pollution_Issue_Date__c}"/>
+      <br></br>
+      
+       <apex:commandButton value="Save" action="{!save}"/>
+   
+  </apex:pageBlockSection>
+  <apex:pageBlockSection columns="1" title="Car Details">
+  <apex:detail />
+  </apex:pageBlockSection>
+ </apex:pageBlock>
+</apex:form>
+</apex:page>
